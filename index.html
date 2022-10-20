@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo Renan">
+    <title>Clínica Fenix</title>
+    <link href="imagens/favicon.ico" rel="shortcut icon" type="imagen/ico" />
+            <!-- mecanismos de busca -->
+    <meta name="robots" content="index, follow" />
+     <meta name="keywords" content="Beleza, Estética, Auto-conceito, harmonização, facil, tratamentos beleza, cuidados corpo, corpo, podologia, tratamentos capilares, limpeza pele, botox, fios de sustentação, sobrancelhas">
+    <meta name="description" content="Descição da sua página. esta página legal aqui por exempli mostra como se desenvolte uma página responsiva.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	<!--chamando css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" media="all">
+</head>
+<body>
+    <header>  <!--Inicio HEADER-->
+        <div class="menu-bg">
+            <div class="menu"> <!--ICONE DO MENU-->
+                <div class="menu__logo">
+                    <a href="index.html"> <img class="img__logo"src="imagens/logo.png" alt="logotipo"> </a>
+                </div> <!--fINAL .MENU__LOGO-->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li> <a href="sobre.html" class="nav__link">Sobre</a></li>
+                        <li> <a href="terapiacapilar.html" class="nav__link"> Terapia Capilar </a></li>
+                        <li> <a href="esteticafacial.html" class="nav__link"> Estética facial </a></li>
+                        <li> <a href="esteticacorporal.html" class="nav__link"> Estética Corporal </a></li>
+                    </ul>
+                </nav> <!--.FINAL NAV -->
+            </div> 
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imagens/carousel1.jpg"  class="d-block w-100" alt="botox">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Aplicação de Botox</h2>
+                    <p>Suas doses controladas e fracionadas vão ajudar a paralisar a musculatura, reduzindo, assim, as rugas e linhas de expressão momentaneamente.</p>
+                </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                <img src="imagens/carousel2.png" class="d-block w-100" alt="microagulhamento">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Microagulhamento</h2>
+                    <p> Um tratamento estético indicado para remover cicatrizes de acne, amenizar estrias, eliminar rugas, diminuir a flacidez da pele e prevenir a queda de cabelo .</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="imagens/carousel3.png" class="d-block w-100" alt="lipoled">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Realização lipoled</h2>
+                    <p>Esta luz interage com as células de gordura e os torna permeável para os triglicéridos nele contidas.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section class= "promo__container">
+            <div class="promocoes">
+                <h1> Nossas Promoções</h1>
+            </div>
+            <div class="promo__cards">
+                <div class="card">
+                    <img src="imagens/pacote1.png" alt="promoção 1" class="pacote__promocao">
+                    <ul class="promo__lista">
+                        <li class="promo-lista__item"> 3 Sessões de vitamina C</li>
+                        <li class="promo-lista__item"> 1 Limpeza profunda</li>
+                    </ul>
+                    <span class="promo-preco"><sup>R$</sup> 200,00</span>
+                    <a href="#" class="plano__btn-comprar">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="imagens/pacote2.png" alt="promoção 1" class="pacote__promocao">
+                    <ul class="promo__lista">
+                        <li class="promo-lista__item"> 3 Sessões de Limpeza de pele profunda de até 2 horas</li>
+                        <li class="promo-lista__item"> 3 aplicações de vapor de ozônio</li>
+                        <li class="promo-lista__item"> 3 sessões de peeling</li>
+                    </ul>
+                    <span class="promo-preco"><sup>R$</sup> 300,00</span>
+                    <a href="#" class="plano__btn-comprar">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="imagens/pacote3.png" alt="promoção 1" class="pacote__promocao">
+                    <ul class="promo__lista">
+                        <li class="promo-lista__item"> 1 Limpeza de pele fotônica - Pra remoção de células mortas e minimiza os danos que surgem aós a retirada dos comedões e pùstulas</li>
+                        <li class="promo-lista__item"> 1 mascara nutritiva</li>
+                    </ul>
+                    <span class="promo-preco"><sup>R$</sup> 250,00</span>
+                    <a href="#" class="plano__btn-comprar">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="imagens/pacote2.png" alt="promoção 1" class="pacote__promocao">
+                    <ul class="promo__lista">
+                        <li class="promo-lista__item"> 1 limpeza de pele profunda</li>
+                        <li class="promo-lista__item"> 1 peeling</li>
+                        <li class="promo-lista__item"> 1 Máscara detox</li>
+                    </ul>
+                    <span class="promo-preco"><sup>R$</sup> 100,00</span>
+                    <a href="#" class="plano__btn-comprar">Comprar</a>
+                </div>
+            </div>
+            <hr>
+            <section class="newsletter">
+                <h1 class="section__titulo">Fique por dentro</h1>
+                <div class="cadastro">
+                    <div class="cadastro__text">
+                        <p class="cadastro__text-p"> Para novidades e promoções exclusivas:</p>                        
+                    </div>
+                    <div class="cadastro__form">
+                        <p class="cadastro__text-p1">Cadastre-se:</p>
+                        <form action="" method>
+                            <label class="cadastro__form-text" > Nome:</label> 
+                            <input type="text" class="cadastro__form-form" id="nome" placeholder="Informe seu nome" />
+                            <br> <br>
+                            <label class="cadastro__form-text"  >Telefone:</label>
+                            <input type="tel" class="cadastro__form-form" id="telefone" placeholder="DDD+numero"/>
+                            <br> <br>
+                            <label class="cadastro__form-text" >E-mail</label>
+                            <input type="email" class="cadastro__form-form" id="email" placeholder="usuario@servidor.com">
+                            <br>
+                            <button class="btn-cadastro" type="button" onclick="cadastro()">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>    
+    </main>
+   
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img src="imagens/logo.png" alt="logotipo">
+            <p class="fim-pg1_text"></p>
+            <p class="footer-company-name">todos os direitos reservados a empresa © 2022</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Brasília DF</span> taguatinga Centro</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>(61)9.9999-9999</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@clinicafenix.com.br</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>sobre</span>
+                Dedicado às mulheres e homens que cuidam de sua autoestima, com tratamentos estéticos faciais eficientes.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
