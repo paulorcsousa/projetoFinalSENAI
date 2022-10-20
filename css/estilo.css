@@ -1,0 +1,563 @@
+/***************************************!
+/* 0. Variáveis
+/***************************************/
+
+:root {
+    --ff-primary: "nunito", Helvetica, Arial, sans-serif;
+
+    --clr-branco:#f5f5f5;
+    --clr-roxo: #7c4c7f;
+    --clr-rosa: #ee5c93;
+    --clt-ouro: #e0ffff;
+}
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+body{
+	background-color: var(--clr-branco);
+	font-family: var(--ff-primary);
+}
+
+a, a:hover, a:link, a:active, a:visited{
+	text-decoration: none;
+}
+
+.img__logo{
+	display: block;
+	max-width: 70%;
+}
+
+h1{
+    color: var(--clr-roxo);
+    font-size: 3rem;
+    
+}
+
+hr{
+	border: none;
+	background-color: #e10bf9;
+	height: 3px;
+	width: 300px;
+	margin: 20px auto;
+}
+
+.section__titulo{
+    text-align: center;
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+/**********************************/
+/* 2. Menu
+/**********************************/
+.menu-bg{
+	background-color: var(--clt-ouro);
+}
+.menu{
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.nav__list {
+	display: flex;
+    list-style: none;
+	flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.nav__link {
+	padding: 20px 10px;
+    color: var(--clr-roxo);
+    font-weight: bold;
+}
+.nav__link:hover{
+    background-color: var(--clr-roxo);
+    color: var(--clt-ouro);
+}
+.nav__link1{
+    color: var(--clr-roxo);
+    padding: 20px 10px;
+    
+}
+
+/**********************************/
+/* 3. carousel
+/**********************************/
+
+.carousel-inner img {
+    min-height: 200px;
+}
+.carousel-caption{
+    background-color: var(--clr-branco);
+    opacity: 0.5;
+    font-weight: bold;
+
+}
+.promocoes{
+    padding: 50px;  
+    display: flex;
+    justify-content: center;
+}
+
+/**********************************/
+/* 4. promoções
+/**********************************/
+
+.promo__cards{
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    border: none;
+}
+.card{
+    background-color: var(--clr-branco);
+    max-width: 300px;
+    border:none;
+}
+.pacote__promocao{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.promo-lista__item{
+    font-size: 1.3rem;
+    font-family: var(--ff-primary);
+    color: var(--clr-roxo );
+    font-weight: bold;
+}
+.promo-preco{
+    display: flex;
+    font-size: 2rem;
+    padding: 5px;
+    margin: auto;
+    font-weight: bold;
+    color: #7c4c7f;
+}
+
+.plano__btn-comprar{
+    min-width: 120px;
+	position: relative;
+	display: inline-block;
+    text-align: center;
+	text-transform: uppercase; 
+    padding: 10px 15px;
+	margin: 30px 25px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.plano__btn-comprar { 
+    border: 5px solid #2ecc71;
+    color: #2ecc71; }
+
+.plano__btn-comprar:hover {
+	cursor: pointer;
+    border: 0px ;
+    background-color: #2ecc71;
+    color: #f5f5f5;
+}
+
+/**********************************/
+/* 5. Cadastro
+/**********************************/
+
+.cadastro{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.cadastro__text{
+    width: 500px;
+    text-align: center;
+    margin-top: 80px;
+}
+.cadastro__text-p{
+    font-size: 2rem;
+    color: var(--clr-roxo);
+    font-weight: 700;
+    
+}
+.cadastro__text-p1{
+    font-size: 2rem;
+    color: var(--clr-branco);
+    font-weight: 700;   
+}
+
+.cadastro__form{
+    background-color: var(--clr-rosa);
+    border-radius: 30px;
+    width: 400px;
+    text-align: center;
+    padding: 50px;
+    margin-right: 180px;
+}
+
+.cadastro__form-text{
+    color: var(--clr-branco);
+    font-weight: 500;
+    padding: 10px;
+}
+
+.cadastro__form-form{
+    background-color: var(--clr-branco);
+    width: 150px;
+}
+.btn-cadastro{
+    margin-top: 20px;
+    width: 100px;
+    background-color: var(--clr-roxo);
+    color: var(--clr-branco);
+}
+
+/**********************************/
+/* 5. sobre
+/**********************************/
+.somos {
+	max-width: 1280px;
+	margin: 50px auto;
+}
+
+.somos-c{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.somos-c__texto{
+	flex: 6 1 160px;
+}
+
+.somos-c__img{
+	flex: 1 1 200px;
+}
+
+.somos-c1{
+	display: flex;
+	flex-wrap: wrap;
+}
+.somos-c__descricao{
+    width: 500px;
+}
+.somos-c__imgdescricao{
+    margin-right: 20px;
+}
+
+
+/**********************************/
+/* 5. Fale Conosco
+/**********************************/
+.faleconosco{
+    width: 40%;
+    background-color: var(--clr-rosa);
+    margin: 0px auto;
+    border-radius: 30px;
+    padding-bottom: 15px;
+}
+
+.faleconosco__text{
+    font-size: 2rem;
+    font-weight: bolder;
+    display:flex;
+    justify-content: center;
+    color: var(--clr-branco);
+    padding-top: 30px; 
+}
+.faleconosco__formulario{
+    margin: 0px auto;
+
+}
+.faleconosco__form{
+    font-size: 1.6rem;
+    color: var(--clr-branco);
+    margin: 40%;
+    font-weight: bold;
+}
+.faleconosco__form-item{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 20%;
+}
+.textarea1{
+    display: flex;
+    margin: 0 auto;
+    resize: none;
+    width: 50%;
+    height: 10rem;
+}
+.btn-faleconosco{
+    padding: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    margin: 10px auto;
+    background-color: var(--clr-roxo);
+    color: var(--clr-branco);
+    border-radius: 10px;
+    border: none;
+}
+.btn-faleconosco:hover {
+	cursor: pointer;
+    border: 0px ;
+    background-color: var(--clt-ouro);
+    color: var(--clr-roxo);
+    transition: 0.5;
+}
+
+/**********************************/
+/* 6. grid links
+/**********************************/
+.grid-pai{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    justify-content: center;
+    margin: 0 auto ;
+
+}
+.grid-filho{
+    margin: 0 auto;
+
+
+}
+
+/**********************************/
+/* 7. Comentario
+/**********************************/
+
+.comentai-comenta{
+    font-size: 1.2rem;
+    color: var(--clr-roxo);
+
+}
+.contario-textarea{
+    resize: none;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.btn-comentario{
+        padding: 10px;
+        font-size: 1.4rem;
+        display: flex;
+        background-color: var(--clr-roxo);
+        color: var(--clr-branco);
+        border-radius: 10px;
+        border: none;
+        margin-left: 200px;
+    }
+
+.btn-comentario:hover {
+        cursor: pointer;
+        border: 0px ;
+        background-color: var(--clt-ouro);
+        color: var(--clr-roxo);
+        transition: 0.5;
+    }
+
+/**********************************/
+/* 8. footer
+/**********************************/
+
+.fim-pg{
+    max-width: 100%;
+    height: 300px;
+    background-color: var(--clt-ouro);
+    margin: 10px;
+    justify-content: center;
+}
+.fim-pg1{
+    width: 300px;
+    text-align: center;
+    align-items: center;
+   
+}
+.fim-pg1_text{
+    text-align: center;
+}
+
+  .footer-distributed{
+      background: var(--clt-ouro);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 55px 50px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+      width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+      color: var(--clr-roxo);
+      font: normal 36px;
+      margin: 0;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+      color:  var(--clr-roxo);
+      margin: 20px 0 12px;
+      padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+    font-weight:400;
+      text-decoration: none;
+      color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+      color:  var(--clr-roxo);
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+      width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+      background-color:  #33383b;
+      color: var(--clr-roxo);
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+      font-size: 17px;
+      line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+      display: inline-block;
+      color: var(--clr-roxo);
+    font-weight:400;
+      vertical-align: middle;
+      margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:14px;
+      line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+      color:  var(--clr-roxo);
+      text-decoration: none;;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: var(--clr-roxo);
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+      width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+      line-height: 20px;
+      color:  var(--clr-roxo);
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+      display: block;
+      color:  var(--clr-roxo);
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+      margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color:  var(--clr-roxo);
+      border-radius: 2px;
+  
+      font-size: 20px;
+      color: var(--clr-roxo);
+      text-align: center;
+      line-height: 35px;
+  
+      margin-right: 3px;
+      margin-bottom: 5px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 1280px) {
+  
+      .footer-distributed{
+          font: bold 14px sans-serif;
+      }
+  
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right{
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+      }
+  
+      .footer-distributed .footer-center i{
+          margin-left: 0;
+      }
+  
+  }
